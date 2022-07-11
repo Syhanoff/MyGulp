@@ -18,8 +18,8 @@ module.exports = {
       'key' : '_v',
       'cover' : 0,
       'to' : [
-          'css',
-          'js',
+          // 'css',
+          // 'js',
       ]
     },
     'output' : {
@@ -91,6 +91,9 @@ module.exports = {
       appleStartup: false
     },
     path: "favicons/",
+    lang: "ru",
+    background: "#fff",
+    theme_color: "#1F1E1C",
   }
 }
 

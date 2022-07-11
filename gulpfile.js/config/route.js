@@ -8,9 +8,8 @@ module.exports = {
     watch: routeSrc + "html/**/*.html",
     dest: routeDest
   },
-  scss: {
+  style: {
     src: routeSrc + "scss/style.+(scss|sass)",
-    srcLibs: routeSrc + "scss/libs.+(scss|sass)",
     watch: [routeSrc + "scss/**/*.+(scss|sass|css)", "!" + routeSrc + "scss/libs/*.*"],
     dest: routeDest + "css/"
   },
@@ -49,7 +48,7 @@ module.exports = {
     destIconSet: routeSrc + "favicon/",
     destInk: routeSrc + "html/parts/",
   },
-  js: {
+  script: {
     src: routeSrc + "js/main.js",
     watch: routeSrc + "js/**/*.js",
     dest: routeDest + "js/"

@@ -1,6 +1,5 @@
-// Пример импорта изпапки
-// import './libs/slick.min.js';
-// import './libs/wow.min.js';
+// Импорта из папки
+import './libs/focus-visible.js';
 
-// Пример импорта из node-модулей
+// Импорта из node-модулей
 // import $ from "jquery";
