@@ -43,7 +43,7 @@ const watcher = () => {
   watch(route.style.watch, style).on('change', browserSync.reload);
   watch((route.fonts.watch), fonts).on('all', browserSync.reload);
   watch((route.fonts.dest), fontFace).on('all', browserSync.reload);
-  watch((route.img.acripttch), img).on('all', browserSync.reload);
+  watch((route.img.watch), img).on('all', browserSync.reload);
   watch((route.ogimg.watch), ogimg).on('all', browserSync.reload);
   watch((route.svg.watch), svg).on('all', browserSync.reload);
   watch((route.script.watch), script).on('change', browserSync.reload);

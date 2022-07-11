@@ -77,7 +77,7 @@ const stylesTask = () => {
   //   .pipe(browserSync.stream());
 
 
-    src(route.style.src, { sourcemaps: setting.isDev })
+    return src(route.style.src, { sourcemaps: setting.isDev })
     .pipe(plumber(
       notify.onError({
       title: "SCSS",
@@ -90,7 +90,7 @@ const stylesTask = () => {
     .pipe(replace(/@img\//g, '../img/'))
     .pipe(autoprefixer(setting.autoprefixer))
     .pipe(gulpif(setting.isProd, group()))
-    .pipe(dest(route.scss.dest), { sourcemaps: setting.isDev })
+    .pipe(dest(route.style.dest), { sourcemaps: setting.isDev })
     .pipe(gulpif(setting.isProd, size({
       title: "style.css"
     })))
@@ -99,7 +99,7 @@ const stylesTask = () => {
     .pipe(gulpif(setting.isProd, size({
       title: "style.min.css"
     })))
-    .pipe(dest(route.scss.dest, { sourcemaps: setting.isDev }))
+    .pipe(dest(route.style.dest, { sourcemaps: setting.isDev }))
     .pipe(browserSync.stream());
 }
 
